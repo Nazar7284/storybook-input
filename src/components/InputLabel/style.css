@@ -1,0 +1,67 @@
+.label-container {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.label-tooltip-container {
+  position: relative;
+  display: flex;
+}
+
+.label-tooltip-container:hover .label-tooltip {
+  opacity: 0.9;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.label-icon-info {
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+}
+
+.label-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
+}
+
+.xs {
+  height: 28px;
+  font-size: 14px;
+}
+
+.md {
+  height: 34px;
+  font-size: 16px;
+}
+
+.lg {
+  height: 40px;
+  font-size: 18px;
+}
+
+.xl {
+  height: 46px;
+  font-size: 20px;
+}
+
+.req {
+  color: red;
+}

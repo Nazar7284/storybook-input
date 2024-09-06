@@ -1,0 +1,12 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  max-width: 600px;
+}

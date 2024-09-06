@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import InputGroup from "./components/InputGroup";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InputGroup
+        direction="row"
+        labelText="Label is"
+        labelSize="md"
+        tooltip="This is a first tooltip"
+        sizeInput="md"
+        placeholder="Input..."
+        annotationText="Please enter your email"
+        typeInput="email"
+        // disabled
+        required
+        rightPosition={false}
+      />
     </div>
   );
 }
